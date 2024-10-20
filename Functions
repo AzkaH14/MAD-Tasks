@@ -1,0 +1,32 @@
+// local scope variable
+function DisplayNum() {
+    var Num = 20;
+    console.log("Function Scope: Num =", Num);
+}
+DisplayNum();
+
+// Global variable 
+var Name = 20;
+function DisplayName() {
+    console.log("Global Scope: Name =", Name); 
+}
+DisplayName();
+
+// Simple function
+function addition(a, b) {
+    return a + b;
+}
+console.log("Addition (Simple Function):", addition(2, 4));
+
+// Anonymous function
+const add = function (x, y) {
+    return x + y;
+};
+console.log("Addition (Anonymous Function):", add(2, 4));
+
+// Arrow function
+const addArrow = (p, q) => {
+    return p + q;
+};
+console.log("Addition (Arrow Function):", addArrow(3, 2));
+
